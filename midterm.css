@@ -1,0 +1,210 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+*{
+	padding:0;
+	margin:0;
+}	
+body{
+	font-size: 100%;	
+  /** you can set this as 100% if you want **/
+	background-color: #666;
+}
+h1, h2, h3{
+	font-weight: 700;	
+	padding: 10px 20px;
+	color: #000;
+}
+h1{
+	font-size: 3.6rem;	
+	font-family: lobster, cursive;
+}
+h2{
+	font-size: 3.0rem;	
+	font-family: lobster, cursive;
+    color: #7F342D;
+    text-align: center;
+}
+h3{
+	font-size: 2.4rem;
+	font-family: lobster, cursive;
+	color: #7F5753;	
+    text-align: center;
+}
+p, li, a{
+	font-weight: 400;
+	font-family: cabin, sans-serif;
+	color: black;		
+}
+p{
+	padding: 10px 20px;
+	font-size: 1.4rem;
+    color: #FFAEA7;
+    
+
+}
+li{
+	font-size: 1.4rem;
+}
+ol li{
+	padding: 6px 20px;
+	margin-left: 20px;
+	list-style-position:inside;
+}
+a{
+	font-size: 1.4rem;
+}
+
+/*******************************
+@mediaing
+********************************/
+
+@media all and (min-width: 1080px){
+    .nav{
+        width: 15%;
+        float: left;
+    }
+    .navbar li{
+     clear: both;
+    width: 100%;
+    }
+    .main{
+        width: 45%;
+        float: left;
+    }
+    .two{
+        width: 20%;
+        float: left;
+    }
+    .three{
+        width: 20%;
+        float: left;
+    }
+    
+}
+
+@media all and (max-width: 1079px) and (min-width: 720px) {
+    .nav {
+     width: 100%;  
+    }
+    .navbar li{
+        width: 25%;
+        
+    }
+    .main{
+     width: 50%;
+    float: left;
+    }
+    .two{
+     width: 25%;
+    float: left;
+    }
+    .three{
+     width: 25%;
+    float: left;
+    }  
+}
+@media all and (max-width: 719px) and (min-width: 500px){
+    .navbar li{
+    width: 25%;
+    float: left;
+    }
+    .main{
+    width: 100%;
+    
+    }
+    .two{
+    width: 50%;
+    float: left;
+    }
+    .three{
+    width: 50%;
+    float: left;
+    }   
+}
+@media all and (max-width: 499px){
+    .navbar li {
+    width: 50%;
+    }
+    html{
+    font-size: 110%;
+    } 
+}
+
+/***********************************
+					Layout
+***********************************/
+.wrapper{
+	background-color: white;
+}
+.masthead{
+	
+}
+.nav{
+	
+}
+.navbar{
+	
+}
+.main{
+	
+}
+.sidebar{
+	
+}
+.footer{
+    clear: both;
+	
+}
+/***********************************
+					Masthead
+***********************************/
+.masthead h1{
+	padding: 30px 20px;
+    text-align: center;
+    color: #CC5448;
+}
+
+/***********************************
+					Navigation
+***********************************/
+
+.navbar li{
+	float:left;	
+/* 960/4 = 240  works if the layout is 960*/
+	list-style:none;
+}
+.navbar a{
+	display: block;	
+    padding: 8px 16px;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	background-color: #FF695A;
+}
+.navbar a:visited,
+.navbar a:hover,
+.navbar a:active,
+.navbar a:focus{
+	
+}
+
+/***********************************
+					Content
+***********************************/
+.sidebar p{
+	font-size: 1.4rem;	
+}
+.instructions{
+	color: #C30;	
+}
+/***********************************
+					Footer
+***********************************/
+.footer p{
+	padding: 20px 20px;
+	font-size: 1.2rem;
+	color: #CC5448;	
+	background-color: #e4e4e4;
+}
